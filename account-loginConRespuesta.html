@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+    <meta charset="utf-8">
+    <title>Register Account
+    </title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Unishop - Universal E-Commerce Template">
+    <meta name="keywords" content="shop, e-commerce, modern, flat style, responsive, online store, business, mobile, blog, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Rokaux">
+    <!-- Mobile Specific Meta Tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Favicon and Apple Icons-->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
+    <!-- Vendor Styles including: Bootstrap, Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="css/vendor.min.css">
+	
+	<!-- SweetAlert -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+	
+    <!-- Main Template Styles-->
+    <link id="mainStyles" rel="stylesheet" media="screen" href="css/styles.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+	<!-- Estilo por Atanache-->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" 
+		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" 
+		crossorigin="anonymous">
+        </script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Modernizr-->
+    <script src="js/modernizr.min.js"></script>
+  </head>
+  
+  
+  <!-- Body-->
+  <body>
+    <!-- Off-Canvas Category Menu-->
+    <div class="offcanvas-container" id="shop-categories">
+      <div class="offcanvas-header">
+        <h3 class="offcanvas-title">Categorias</h3>
+      </div>
+      <nav class="offcanvas-menu">
+        <ul class="menu">
+          <li class="has-children"><span><a href="#">Men's Shoes</a><span class="sub-menu-toggle"></span></span>
+            <ul class="offcanvas-submenu">
+              <li><a href="#">Sneakers</a></li>
+              <li><a href="#">Loafers</a></li>
+              <li><a href="#">Boat Shoes</a></li>
+              <li><a href="#">Sandals</a></li>
+              <li><a href="#">View All</a></li>
+            </ul>
+          </li>
+          <li class="has-children"><span><a href="#">Women's Shoes</a><span class="sub-menu-toggle"></span></span>
+            <ul class="offcanvas-submenu">
+              <li><a href="#">Sandals</a></li>
+              <li><a href="#">Flats</a></li>
+              <li><a href="#">Sneakers</a></li>
+              <li><a href="#">Heels</a></li>
+              <li><a href="#">View All</a></li>
+            </ul>
+          </li>
+          <li class="has-children"><span><a href="#">Men's Clothing</a><span class="sub-menu-toggle"></span></span>
+            <ul class="offcanvas-submenu">
+              <li><a href="#">Shirts &amp; Tops</a></li>
+              <li><a href="#">Pants</a></li>
+              <li><a href="#">Jackets</a></li>
+              <li><a href="#">View All</a></li>
+            </ul>
+          </li>
+          <li class="has-children"><span><a href="#">Women's Clothing</a><span class="sub-menu-toggle"></span></span>
+            <ul class="offcanvas-submenu">
+              <li><a href="#">Dresses</a></li>
+              <li><a href="#">Shirts &amp; Tops</a></li>
+              <li><a href="#">Shorts</a></li>
+              <li><a href="#">Swimwear</a></li>
+              <li><a href="#">View All</a></li>
+            </ul>
+          </li>
+          <li class="has-children"><span><a href="#">Kid's Shoes</a><span class="sub-menu-toggle"></span></span>
+            <ul class="offcanvas-submenu">
+              <li><a href="#">Boots</a></li>
+              <li><a href="#">Sandals</a></li>
+              <li><a href="#">Crib Shoes</a></li>
+              <li><a href="#">Loafers</a></li>
+              <li><a href="#">View All</a></li>
+            </ul>
+          </li>
+          <li class="has-children"><span><a href="#">Bags</a><span class="sub-menu-toggle"></span></span>
+            <ul class="offcanvas-submenu">
+              <li><a href="#">Handbags</a></li>
+              <li><a href="#">Backpacks</a></li>
+              <li><a href="#">Luggage</a></li>
+              <li><a href="#">Wallets</a></li>
+              <li><a href="#">View All</a></li>
+            </ul>
+          </li>
+          <li class="has-children"><span><a href="#">Accessories</a><span class="sub-menu-toggle"></span></span>
+            <ul class="offcanvas-submenu">
+              <li><a href="#">Sunglasses</a></li>
+              <li><a href="#">Hats</a></li>
+              <li><a href="#">Watches</a></li>
+              <li><a href="#">Jewelry</a></li>
+              <li><a href="#">Belts</a></li>
+              <li><a href="#">View All</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Off-Canvas Mobile Menu-->
+    <div class="offcanvas-container" id="mobile-menu"><a class="account-link" href="account-orders.html">
+        <div class="user-ava"><img src="img/account/user-ava-md.jpg" alt="Augusto Cesar Rojas Rodríguez">
+        </div>
+        <div class="user-info">
+          <h6 class="user-name">Augusto Cesar Rojas Rodríguez</h6><span class="text-sm text-white opacity-60">Casillero # FP001CO</span>
+        </div></a>
+      <nav class="offcanvas-menu">
+        <ul class="menu">
+          <li class="has-children"><span><a href="index.html"><span>Home</span></a><span class="sub-menu-toggle"></span></span>
+            
+          </li>
+          <li class="has-children"><span><a href="index.html"><span>Acerca de</span></a><span class="sub-menu-toggle"></span></span>
+            
+          </li>
+          <li class="has-children"><span><a href="#">Categories</a><span class="sub-menu-toggle"></span></span>
+            <ul class="offcanvas-submenu">
+              <li class="has-children"><span><a href="#">Men's Shoes</a><span class="sub-menu-toggle"></span></span>
+                <ul class="offcanvas-submenu">
+                  <li><a href="#">Sneakers</a></li>
+                  <li><a href="#">Loafers</a></li>
+                  <li><a href="#">Boat Shoes</a></li>
+                  <li><a href="#">Sandals</a></li>
+                  <li><a href="#">View All</a></li>
+                </ul>
+              </li>
+              <li class="has-children"><span><a href="#">Women's Shoes</a><span class="sub-menu-toggle"></span></span>
+                <ul class="offcanvas-submenu">
+                  <li><a href="#">Sandals</a></li>
+                  <li><a href="#">Flats</a></li>
+                  <li><a href="#">Sneakers</a></li>
+                  <li><a href="#">Heels</a></li>
+                  <li><a href="#">View All</a></li>
+                </ul>
+              </li>
+              <li class="has-children"><span><a href="#">Men's Clothing</a><span class="sub-menu-toggle"></span></span>
+                <ul class="offcanvas-submenu">
+                  <li><a href="#">Shirts &amp; Tops</a></li>
+                  <li><a href="#">Pants</a></li>
+                  <li><a href="#">Jackets</a></li>
+                  <li><a href="#">View All</a></li>
+                </ul>
+              </li>
+              <li class="has-children"><span><a href="#">Women's Clothing</a><span class="sub-menu-toggle"></span></span>
+                <ul class="offcanvas-submenu">
+                  <li><a href="#">Dresses</a></li>
+                  <li><a href="#">Shirts &amp; Tops</a></li>
+                  <li><a href="#">Shorts</a></li>
+                  <li><a href="#">Swimwear</a></li>
+                  <li><a href="#">View All</a></li>
+                </ul>
+              </li>
+              <li class="has-children"><span><a href="#">Bags</a><span class="sub-menu-toggle"></span></span>
+                <ul class="offcanvas-submenu">
+                  <li><a href="#">Handbags</a></li>
+                  <li><a href="#">Backpacks</a></li>
+                  <li><a href="#">Luggage</a></li>
+                  <li><a href="#">Wallets</a></li>
+                  <li><a href="#">View All</a></li>
+                </ul>
+              </li>
+              <li class="has-children"><span><a href="#">Accessories</a><span class="sub-menu-toggle"></span></span>
+                <ul class="offcanvas-submenu">
+                  <li><a href="#">Sunglasses</a></li>
+                  <li><a href="#">Hats</a></li>
+                  <li><a href="#">Watches</a></li>
+                  <li><a href="#">Jewelry</a></li>
+                  <li><a href="#">Belts</a></li>
+                  <li><a href="#">View All</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="has-children active"><span><a href="Login.html"><span>Mi Cuenta</span></a><span class="sub-menu-toggle"></span></span>
+
+          </li>
+          
+          <li class="has-children"><span><a href="index.html"><span>Infórmate</span></a><span class="sub-menu-toggle"></span></span>
+            
+          </li>
+          <li class="has-children"><span><a href="account-login.html"><span>Registro</span></a><span class="sub-menu-toggle"></span></span>
+            
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Topbar-->
+    <div class="topbar">
+      <div class="topbar-column"><a class="hidden-md-down" href="mailto:support@fivepaq.com"><i class="icon-mail"></i>&nbsp; support@fivepaq.com</a><a class="hidden-md-down" href="https://api.whatsapp.com/send?phone=573132851177&text=Quiero%2C%20adquirir%20un%20casillero%20%20con%20ustedes"><i class="icon-volume"></i>&nbsp; 313 285 1177</a><a class="social-button sb-facebook shape-none sb-dark" href="#" target="_blank"><i class="socicon-facebook"></i></a><a class="social-button sb-twitter shape-none sb-dark" href="#" target="_blank"><i class="socicon-twitter"></i></a><a class="social-button sb-instagram shape-none sb-dark" href="#" target="_blank"><i class="socicon-instagram"></i></a><a class="social-button sb-pinterest shape-none sb-dark" href="#" target="_blank"><i class="socicon-pinterest"></i></a>
+      </div>
+      
+    </div>
+    <!-- Navbar-->
+    <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
+    <header class="navbar navbar-sticky">
+      <!-- Search-->
+      <form class="site-search" method="get">
+        <input type="text" name="site_search" placeholder="Type to search...">
+        <div class="search-tools"><span class="clear-search">Clear</span><span class="close-search"><i class="icon-cross"></i></span></div>
+      </form>
+      <div class="site-branding">
+        <div class="inner">
+          <!-- Off-Canvas Toggle (#shop-categories)--><a class="offcanvas-toggle cats-toggle" href="#shop-categories" data-toggle="offcanvas"></a>
+          <!-- Off-Canvas Toggle (#mobile-menu)--><a class="offcanvas-toggle menu-toggle" href="#mobile-menu" data-toggle="offcanvas"></a>
+          <!-- Site Logo--><a class="site-logo" href="index.html"><img src="img/logo.png" alt="Unishop"></a>
+        </div>
+      </div>
+      <!-- Main Navigation-->
+      <nav class="site-menu">
+        <ul>
+          <li class="has-megamenu"><a href="index.html"><span>Home</span></a>
+            
+          </li>
+          <li><a href="#"><span>Acerca de</span></a>
+            
+          </li>
+          <li class="has-megamenu"><a href="#"><span>¿Donde Comprar?</span></a>
+            
+          </li>
+          <li class="has-megamenu active"><a href="Login.html"><span>My Acount</span></a>
+           
+          </li>
+          
+          <li><a href="account-login.html"><span>Registro</span></a>
+            
+          </li>
+          
+        </ul>
+      </nav>
+      <!-- Toolbar-->
+      <div class="toolbar">
+        <div class="inner">
+          <div class="tools">
+            <div class="search"><i class="icon-search"></i></div>
+            <div class="account"><a href="account-orders.html"></a><i class="icon-head"></i>
+              <ul class="toolbar-dropdown">
+                <li class="sub-menu-user">
+                  <div class="user-ava"><img src="img/account/user-ava-sm.jpg" alt="Augusto Rojas">
+                  </div>
+                  <div class="user-info">
+                    <h6 class="user-name">Augusto Cesar Rojas Rodríguez</h6>
+                  </div>
+                </li>
+                  
+                <li class="sub-menu-separator"></li>
+                <li><a href="#"> <i class="icon-unlock"></i>Logout</a></li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Off-Canvas Wrapper-->
+    <div class="offcanvas-wrapper">
+      <!-- Page Title-->
+      <div class="page-title">
+        <div class="container">
+          <div class="column">
+            <h1>Register Account</h1>
+          </div>
+          <div class="column">
+            <ul class="breadcrumbs">
+              <li><a href="index.html">Home</a>
+              </li>
+              <li class="separator">&nbsp;</li>
+              <li><a href="account-orders.html">Account</a>
+              </li>
+              <li class="separator">&nbsp;</li>
+              <li>Register</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Page Content-->
+      <div class="container padding-bottom-3x mb-2">
+        <div class="row">
+		
+		
+			<div class="col-md-6">
+            <div class="padding-top-3x hidden-md-up"></div>
+            <h3 class="margin-bottom-1x">Verificación de Email</h3>
+            <p>Esto sera empleado para las notificaciones de sus paquetes.</p>
+           <div class="row">
+              
+			  <div class="col-sm-6">
+			  <div class="form-group input-group">
+                <input class="form-control form-control-rounded form-control-lg" type="email" placeholder="Email" id="email" value="" required><span class="input-group-addon"><i class="icon-mail"></i></span>
+              </div>
+			  </div>
+			  
+			  <div class="col-sm-6">
+			  
+			  </div>
+			  
+			<div class="padding-top-3x hidden-md-up"></div>
+            <h3 class="margin-bottom-1x">Información Personales</h3>
+            <p>Los datos recolectados seran empleados para temas de facturación.</p>
+			  <div class="col-sm-6">
+			    <div class="form-group">
+				  <input class="form-control form-control-rounded form-control-lg" type="text" id="nombre" value="" placeholder="Nombres y Apellidos" required>
+                </div>
+              </div>
+			  
+             		  
+			  <div class="col-sm-6">
+                  
+				<div class="form-group">
+                  <select class="form-control form-control-rounded form-control-lg" id="account-TipoIdentificacion">
+                    <option selected>Seleccione Tipo Documento</option>
+					<option>Cédula</option>
+					<option>Pasaporte</option>
+                    <option>Nit</option>
+                   </select>
+                </div>
+				</div>
+			  
+              <div class="col-sm-6">
+                <div class="form-group input-group">
+                  <input class="form-control form-control-rounded form-control-lg" type="text" id="documento" value="0" placeholder="Identificación" required><span class="input-group-addon"><i class="icon-head"></i></span>
+                </div>
+              </div>
+			  
+			  <div class="col-sm-6">
+                <div class="form-group">
+                  
+                  <input class="form-control form-control-rounded form-control-lg" type="password"  id="password" value="" placeholder="Contraseña" required>
+                </div>
+              </div>
+              
+			  
+			  <div class="padding-top-3x hidden-md-up"></div>
+            <h3 class="margin-bottom-1x">Información Adicional</h3>
+            <p>Esta información sera empleada para la entrega de los paquetes.</p>
+	
+				<div class="col-sm-6">
+                  
+				<div class="form-group">
+                  <select class="form-control form-control-rounded form-control-lg" id="account-TipoEmpresa">
+                    <option selected>Persona Natural</option>
+					<option>Persona Jurídica</option>
+				  </select>
+                </div>
+				</div>
+
+			<div class="col-sm-6">
+                <div class="form-group">
+                  
+                  <input class="form-control form-control-rounded form-control-lg" type="text" id="empresa" value="" placeholder="Empresa" required>
+                </div>
+            </div>
+
+			
+			<div class="col-sm-6">
+                <div class="form-group input-group">
+                  
+                  <input class="form-control form-control-rounded form-control-lg" type="text" id="telefono" value="1" placeholder="Teléfono" required><span class="input-group-addon"><i class="pe-7s-phone"></i></span>
+				  
+				</div>
+            </div>
+              
+			  
+			  
+			  <div class="col-sm-6">
+                <div class="form-group">
+                  
+                  <input class="form-control form-control-rounded form-control-lg" type="text" id="ciudadNombre" value="" placeholder="Ciudad" required>
+				  
+				  
+                </div>
+              </div>  
+			  
+			  
+			  
+			  
+			  
+			  <div class="col-sm-4">
+                <div class="form-group">
+                  
+                  <input class="form-control form-control-rounded form-control-lg" type="text" id="cpostal" value=""  placeholder="Código Postal" required>
+                </div>
+              </div>
+			  
+			 
+			 <div class="col-sm-8">
+                <div class="form-group">
+                  
+                  <input class="form-control form-control-rounded form-control-lg" type="text" id="direccion" value="" placeholder="Dirección" required>
+                </div>
+              </div>
+			 
+			  
+			  <input type="hidden" id="ciudadId" value="0" />		
+              <div class="col-12 text-center text-sm-right">
+                <button class="btn btn-primary margin-bottom-none" onclick="grabarClick()"> Crear Cuenta</button>
+				
+				
+              </div>
+            </div>
+          </div>
+		
+		
+		
+		
+		
+		
+          <div class="col-md-6">
+            
+              <div >
+				<div class="img-cover rounded" style="background-image: url(img/account/register.jpg);"></div>
+			  </div>
+              
+            
+          </div>
+		  
+		  
+		  
+          
+        </div>
+      </div>
+      <!-- Site Footer-->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <!-- Contact Info-->
+              <section class="widget widget-light-skin">
+                <h3 class="widget-title">¿Donde Estamos?</h3>
+                
+				<p class="text-white" class="fa fa-whatsapp">Phone: 313 285 1177</p>
+                <ul class="list-unstyled text-sm text-white">
+                  <li><span class="opacity-50">Lunes-Viernes:</span>8.00 am - 5.00 pm</li>
+                  <li><span class="opacity-50">Sabados:</span>9.00 am - 12.00 AM</li>
+                </ul>
+                <p><a class="navi-link-light" href="#">support@fivepaq.com</a></p><a class="social-button shape-circle sb-facebook sb-light-skin" href="#"><i class="socicon-facebook"></i></a><a class="social-button shape-circle sb-twitter sb-light-skin" href="#"><i class="socicon-twitter"></i></a><a class="social-button shape-circle sb-instagram sb-light-skin" href="#"><i class="socicon-instagram"></i></a><a class="social-button shape-circle sb-google-plus sb-light-skin" href="#"><i class="socicon-googleplus"></i></a>
+              </section>
+            </div>
+            
+            <div class="col-lg-3 col-md-6">
+              <!-- About Us-->
+              <section class="widget widget-links widget-light-skin">
+                <h3 class="widget-title"></h3>
+                
+              </section>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <!-- Account / Shipping Info-->
+              <section class="widget widget-links widget-light-skin">
+                <h3 class="widget-title">Account &amp; Shipping Info</h3>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#">Acerca de</a></li>
+                  <li><a href="#">¿Donde Comprar?</a></li>
+                  <li><a href="Login.html">My Account</a></li>
+                  <li><a href="account-login.html">Registro</a></li>
+                  
+                </ul>
+              </section>
+            </div>
+          </div>
+          <hr class="hr-light mt-2 margin-bottom-2x">
+          <div class="row">
+            <div class="col-md-7 padding-bottom-1x">
+              <!-- Payment Methods-->
+              <div class="margin-bottom-1x" style="max-width: 615px;"><img src="img/payment_methods.png" alt="Payment Methods">
+              </div>
+            </div>
+            <div class="col-md-5 padding-bottom-1x">
+              <div class="margin-top-1x hidden-md-up"></div>
+              <!--Subscription-->
+              <form class="subscribe-form" action="//rokaux.us12.list-manage.com/subscribe/post?u=c7103e2c981361a6639545bd5&amp;amp;id=1194bb7544" method="post" target="_blank" novalidate>
+                <div class="clearfix">
+                  <div class="input-group input-light">
+                    <input class="form-control" type="email" name="EMAIL" placeholder="Your e-mail"><span class="input-group-addon"><i class="icon-mail"></i></span>
+                  </div>
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_c7103e2c981361a6639545bd5_1194bb7544" tabindex="-1">
+                  </div>
+                  <button class="btn btn-primary" type="submit"><i class="icon-check"></i></button>
+                </div><span class="form-text text-sm text-white opacity-50">Suscribete a nuestros boletines informativos.</span>
+              </form>
+            </div>
+          </div>
+          <!-- Copyright-->
+          <p class="footer-copyright">© All rights reserved. Made with &nbsp;<i class="icon-heart text-danger"></i><a href="http://fivepaq.com/" target="_blank"> &nbsp;by FivePaq</a></p>
+        </div>
+      </footer>
+    </div>
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="icon-arrow-up"></i></a>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+
+	
+
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="js/vendor.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<!-- Script por Atanache-->
+	<!-- Script por Atanache Para Registro-->
+	<!-- Script por Atanache Para Registro Logica---->
+
+	
+</body>
+
+	<script>
+
+
+
+    $(function(){
+
+        var getData = function(request, response) {
+
+            $.getJSON(
+
+            "https://fpaq.azurewebsites.net/api/Ciudades/" + request.term,
+
+            function (data) {
+
+                var array = data.error ? [] : $.map(data, function(m) {
+
+							return {
+
+								label: m.Nombre,
+
+								value: m.CiudadId
+
+							};
+
+						});                
+
+                response(array);
+
+            }
+
+        )};
+
+        
+
+        $("#ciudadNombre").autocomplete({
+
+                minLength: 3,
+
+                source: getData,
+
+                select: function(event, ui){
+
+                    
+
+                    var nombre = ui.item.label;
+
+                    var id = ui.item.value;
+
+                    $("#ciudadNombre").val(nombre);
+
+                    $("#ciudadId").val(id);
+
+                    return false;
+
+                }
+
+            });    
+
+    });
+
+
+
+    function grabarClick() {
+
+  // Build product object from inputs
+
+        Cuenta = new Object();
+
+        Cuenta.Convenio = "BX";
+
+        Cuenta.LlaveConvenio = "AAF1A8FD-199C-49E7-BC1F-830A922B4089";
+
+        Cuenta.Documento = $("#documento").val();
+
+        Cuenta.Empresa = $("#empresa").val();
+
+        Cuenta.Nombre = $("#nombre").val();
+
+        Cuenta.Direccion = $("#direccion").val();
+
+        Cuenta.CiudadId = $("#ciudadId").val();
+
+        Cuenta.CodigoPostal = $("#cpostal").val();
+
+        Cuenta.Telefono = $("#telefono").val();
+
+        Cuenta.Password = $("#password").val();
+
+        Cuenta.EMail = $("#email").val();
+
+
+
+        CuentaAdd(Cuenta);
+
+    }
+
+
+
+    function CuentaAdd(Cuenta) {
+
+    
+	   $.ajax({
+
+            url: "https://fpaq.azurewebsites.net/api/cuentas",
+
+            type: 'POST',
+
+            contentType:
+
+            "application/json;charset=utf-8",
+
+            data: JSON.stringify(Cuenta),
+
+            success: function (noCuenta) {
+
+                CuentaSuccess(noCuenta);
+
+            },
+
+            error: function (request, message, error) {
+
+            handleException(request, message, error);
+
+            }
+
+        });
+
+    }
+
+
+
+    function CuentaSuccess(noCuenta) {
+
+	
+	  swal("¡Felicitaciones Ya eres un FivePaq!", "Tu Número de Casillero es: ",  "success");
+        alert(noCuenta);
+
+        //formClear();
+
+    }
+
+
+
+    function handleException(request, message, error) {
+
+        var msg = "";
+
+        msg += "Code: " + request.status + "\n";
+
+        msg += "Text: " + request.statusText + "\n";
+
+        if (request.responseJSON != null) {
+
+            msg += "Message" + request.responseJSON.Message + "\n";
+
+        }
+
+        alert(msg);
+
+    }
+
+
+
+</script>
+
+
+</html>

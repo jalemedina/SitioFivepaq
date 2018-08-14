@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Documento sin título</title>
+        <script language="javascript" type="text/javascript" src="extras/js/jquery/jquery-1.3.2.min.js"></script>
+        
+    </head>
+    <body>
+       <div>
+      <div>
+           <SELECT NAME="pago" onChange="pagoOnChange(this)">
+              <OPTION VALUE="transferencia">Transferéncia</OPTION>
+              <OPTION VALUE="tarjeta">Pago con tarjeta</OPTION> 
+           </SELECT>
+      </div>
+      <div id="nCuenta" style="display:none;">
+           Nuestro numero de cuenta es: 000000000000000000000
+      </div>
+      <div id="nTargeta" style="display:;">
+           <br>
+           Numero*
+           <br>
+           <input type='text' name='nTarjeta'size='20' maxLength='60'>
+           <br><br>
+           Titular*
+           <br>
+           <input type='text' name='titularTarjeta'size='20' maxLength='60'>
+           <br><br>
+           Numero de seguridad*
+           <input type='text' name='numeroSeguridad'size='3' maxLength='3'>
+      </div>
+</div>
+
+    </body>
+	<script>
+	function pagoOnChange(sel) {
+      if (sel.value=="transferencia"){
+           divC = document.getElementById("nCuenta");
+           divC.style.display = "";
+
+           divT = document.getElementById("nTargeta");
+           divT.style.display = "none";
+
+      }else{
+
+           divC = document.getElementById("nCuenta");
+           divC.style.display="none";
+
+           divT = document.getElementById("nTargeta");
+           divT.style.display = "";
+      }
+}
+</script>
+</html> 
